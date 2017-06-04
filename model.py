@@ -19,5 +19,5 @@ def discriminator(x, n_units=128, reuse=False, alpha=0.01):
         h1 = tf.maximum(alpha*h1,h1)        # Leaky ReLU
         logits = tf.layers.dense(h1,1,activation=None)      # Logits
         output = tf.sigmoid(logits)         # Output varies from [0,1]
-        return logits, output
+        return output, logits
     
