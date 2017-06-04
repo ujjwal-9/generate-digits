@@ -39,7 +39,7 @@ tf.reset_default_graph()
 input_real, input_z = model_inputs(input_size, z_size)
 
 # Generator network
-g_model = geneartor(input_z, input_size)        #g_model is Generator output
+g_model = generator(input_z, input_size)        #g_model is Generator output
 
 # Discriminator network
 d_model_real, d_logits_real = discriminator(input_real)
